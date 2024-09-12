@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.box {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Different colors for input boxes */
+.box.select-section {
+    border-color: #8e44ad;
+}
+
+.box.input-section {
+    border-color: #3498db;
+}
+
+.box.result-section {
+    border-color: #27ae60;
+}
+
+/* Label and input field styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Button container and buttons styling */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:nth-child(1) {
+    background-color: #e74c3c;
+}
+
+button:nth-child(1):hover {
+    background-color: #c0392b;
+}
+
+button:nth-child(2) {
+    background-color: #3498db;
+}
+
+button:nth-child(2):hover {
+    background-color: #2980b9;
+}
+
+.result-section h2 {
+    color: #27ae60;
+}
+
+#result {
+    font-size: 24px;
+    color: #e74c3c;
+    font-weight: bold;
+}

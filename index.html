@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Converter</h1>
+
+        <!-- Section for selecting input type -->
+        <div class="box select-section">
+            <label for="input-type">Select Input Type:</label>
+            <select id="input-type">
+                <option value="binary">Binary</option>
+                <option value="octal">Octal</option>
+                <option value="decimal">Decimal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+        </div>
+
+        <!-- Section for inputting the number -->
+        <div class="box input-section">
+            <label for="input-number">Enter Number:</label>
+            <input type="text" id="input-number" placeholder="Enter your number">
+        </div>
+
+        <!-- Section for selecting output type -->
+        <div class="box select-section">
+            <label for="output-type">Select Output Type:</label>
+            <select id="output-type">
+                <option value="binary">Binary</option>
+                <option value="octal">Octal</option>
+                <option value="decimal">Decimal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+        </div>
+
+        <!-- Buttons to convert and clear the number -->
+        <div class="button-container">
+            <button onclick="convertNumber()">Convert</button>
+            <button onclick="clearFields()">Clear</button>
+        </div>
+
+        <!-- Displaying the result -->
+        <div class="box result-section">
+            <h2>Result:</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
